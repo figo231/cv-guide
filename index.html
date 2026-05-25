@@ -563,6 +563,177 @@ function switchTab(btn, group) {
   if (contents[idx]) contents[idx].classList.add('active');
 }
 </script>
+<style>
 
+/* EXTRA ACTIONS */
+.action-section{
+  margin-top: 30px;
+}
+
+.action-section h2{
+  font-family: 'Tajawal', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #0d2137;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.action-section p{
+  text-align: center;
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+.action-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.action-btn{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: 1px solid #e8edf2;
+}
+
+.ab-icon{
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.student-btn{
+  background: #eef9ff;
+}
+
+.student-btn .ab-icon{
+  background: #d9f1ff;
+}
+
+.graduate-btn{
+  background: #fff8ee;
+}
+
+.graduate-btn .ab-icon{
+  background: #ffe0a3;
+}
+
+.contact-help{
+  background: #eefcf5;
+}
+
+.contact-help .ab-icon{
+  background: #bff0d4;
+}
+
+.ab-text strong{
+  display: block;
+  color: #0d2137;
+  margin-bottom: 4px;
+}
+
+.ab-text span{
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.mini-guide{
+  margin-top: 18px;
+  background: #fff;
+  border: 1px solid #e8edf2;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.mini-guide h3{
+  margin-bottom: 14px;
+  color: #0d2137;
+}
+
+.mini-item{
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+</style>
+
+<div class="action-section">
+
+  <h2>ابدأ رحلتك من هنا 🚀</h2>
+  <p>اختار اللي يناسب مرحلتك الحالية</p>
+
+  <div class="action-buttons">
+
+    <a href="#student-tips" class="action-btn student-btn">
+      <div class="ab-icon">🎓</div>
+
+      <div class="ab-text">
+        <strong>لو أنت طالب</strong>
+        <span>خطوات مهمة تبدأ بيها من دلوقتي</span>
+      </div>
+    </a>
+
+    <a href="#graduate-tips" class="action-btn graduate-btn">
+      <div class="ab-icon">💼</div>
+
+      <div class="ab-text">
+        <strong>لو أنت خريج</strong>
+        <span>اعرف تزود فرص شغلك بسرعة</span>
+      </div>
+    </a>
+
+    <a href="https://www.qrtagapp.com/info/kareemmohamed946c"
+       target="_blank"
+       class="action-btn contact-help">
+
+      <div class="ab-icon">🤝</div>
+
+      <div class="ab-text">
+        <strong>محتاج مساعدة؟</strong>
+        <span>تواصل مع المنشئ مباشرة</span>
+      </div>
+    </a>
+
+  </div>
+
+  <div id="student-tips" class="mini-guide">
+
+    <h3>🎓 نصايح مهمة للطلاب</h3>
+
+    <div class="mini-item">
+      اعمل حساب LinkedIn احترافي وابدأ تبني علاقات.
+    </div>
+
+    <div class="mini-item">
+      خد كورسات مرتبطة بتخصصك.
+    </div>
+
+    <div class="mini-item">
+      ابدأ مشاريع بسيطة وحطها في الـ CV.
+    </div>
+
+    <div class="mini-item">
+      حاول تنزل تدريب حتى لو مجاني.
+    </div>
+
+  </div>
+
+  <div id="graduate-tips" class="mini-guide">
+
+    <
 </body>
 </html>

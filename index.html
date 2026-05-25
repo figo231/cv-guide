@@ -3,222 +3,282 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دليل الـ CV لخريجي التجارة — Kareem Mohamed</title>
+<title>دليل الـ CV — Kareem Mohamed</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body {
-    font-family: 'Cairo', sans-serif;
-    background: #0d2137;
-    min-height: 100vh;
-    padding: 24px 16px;
-    direction: rtl;
-  }
+body {
+  font-family: 'Cairo', sans-serif;
+  background: #0d2137;
+  min-height: 100vh;
+  padding: 24px 16px;
+  direction: rtl;
+}
 
-  .card {
-    max-width: 680px;
-    margin: 0 auto;
-    background: #fff;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.4);
-  }
+.card {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+}
 
-  /* HEADER */
-  .header {
-    background: linear-gradient(135deg, #0d2137 0%, #1a3a52 60%, #1e4d6b 100%);
-    padding: 40px 32px 32px;
-    position: relative;
-    overflow: hidden;
-  }
-  .header .blob1 {
-    position: absolute; top: -40px; left: -40px;
-    width: 200px; height: 200px; border-radius: 50%;
-    background: rgba(0,184,148,0.12);
-  }
-  .header .blob2 {
-    position: absolute; bottom: -60px; right: -20px;
-    width: 250px; height: 250px; border-radius: 50%;
-    background: rgba(249,168,37,0.07);
-  }
-  .header-inner { position: relative; z-index: 1; }
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, #0d2137 0%, #1a3a52 60%, #1e4d6b 100%);
+  padding: 40px 32px 32px;
+  position: relative;
+  overflow: hidden;
+}
 
-  .badge {
-    display: inline-block;
-    background: rgba(0,184,148,0.2);
-    border: 1px solid rgba(0,184,148,0.4);
-    color: #00b894;
-    font-size: 12px; font-weight: 700;
-    padding: 4px 14px; border-radius: 20px;
-    margin-bottom: 14px; letter-spacing: 1px;
-  }
+.header .blob1 {
+  position: absolute; top: -40px; left: -40px;
+  width: 200px; height: 200px; border-radius: 50%;
+  background: rgba(0,184,148,0.12);
+}
 
-  .header h1 {
-    font-family: 'Tajawal', sans-serif;
-    font-size: 26px; font-weight: 900;
-    color: #fff; line-height: 1.35;
-    margin-bottom: 10px;
-  }
-  .header h1 span { color: #00b894; }
+.header .blob2 {
+  position: absolute; bottom: -60px; right: -20px;
+  width: 250px; height: 250px; border-radius: 50%;
+  background: rgba(249,168,37,0.07);
+}
 
-  .header p {
-    color: rgba(255,255,255,0.65);
-    font-size: 13.5px; line-height: 1.75;
-    max-width: 480px;
-  }
+.header-inner { position: relative; z-index: 1; }
 
-  .header-tags {
-    display: flex; gap: 8px;
-    margin-top: 18px; flex-wrap: wrap;
-  }
-  .header-tags span {
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.12);
-    color: rgba(255,255,255,0.7);
-    font-size: 12px; padding: 5px 12px; border-radius: 20px;
-  }
+.badge {
+  display: inline-block;
+  background: rgba(0,184,148,0.2);
+  border: 1px solid rgba(0,184,148,0.4);
+  color: #00b894;
+  font-size: 12px; font-weight: 700;
+  padding: 4px 14px; border-radius: 20px;
+  margin-bottom: 14px; letter-spacing: 1px;
+}
 
-  /* BODY */
-  .body { padding: 28px 24px 24px; }
+.header h1 {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 26px; font-weight: 900;
+  color: #fff; line-height: 1.35;
+  margin-bottom: 10px;
+}
 
-  /* SECTION CARD */
-  .sec-card {
-    border: 1.5px solid #e8edf2;
-    border-radius: 16px; overflow: hidden;
-    margin-bottom: 16px;
-    transition: box-shadow 0.2s;
-  }
-  .sec-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.10); }
+.header h1 span { color: #00b894; }
 
-  .sec-head {
-    display: flex; align-items: center; gap: 12px;
-    padding: 13px 18px;
-  }
-  .sec-icon {
-    width: 40px; height: 40px; border-radius: 12px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 19px; flex-shrink: 0;
-  }
-  .sec-title {
-    font-family: 'Tajawal', sans-serif;
-    font-size: 15px; font-weight: 800;
-    color: #0d2137; flex: 1;
-  }
-  .sec-num {
-    width: 26px; height: 26px; border-radius: 50%;
-    color: #fff;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 12px; font-weight: 800; flex-shrink: 0;
-  }
+.header p {
+  color: rgba(255,255,255,0.65);
+  font-size: 13.5px; line-height: 1.75;
+  max-width: 480px;
+}
 
-  .sec-body { padding: 4px 18px 14px; background: #fff; }
+.header-tags {
+  display: flex; gap: 8px;
+  margin-top: 18px; flex-wrap: wrap;
+}
 
-  .tip-row {
-    display: flex; align-items: flex-start; gap: 10px;
-    padding: 8px 0;
-    border-bottom: 1px dashed #eef1f4;
-    font-size: 13.5px; color: #2d3a45; line-height: 1.65;
-  }
-  .tip-row:last-of-type { border-bottom: none; }
-  .tip-dot {
-    width: 7px; height: 7px; border-radius: 50%;
-    margin-top: 6px; flex-shrink: 0;
-  }
+.header-tags span {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.7);
+  font-size: 12px; padding: 5px 12px; border-radius: 20px;
+}
 
-  .example-box {
-    background: #e8faf6;
-    border-right: 3px solid #00b894;
-    border-radius: 0 10px 10px 0;
-    padding: 10px 14px;
-    margin-top: 10px; font-size: 13px; color: #1a3a52;
-  }
-  .example-box strong {
-    display: block; color: #00896e;
-    font-size: 11px; letter-spacing: 0.5px; margin-bottom: 4px;
-  }
+/* BODY */
+.body { padding: 28px 24px 24px; }
 
-  /* GOLDEN TIP */
-  .golden-tip {
-    background: linear-gradient(135deg, #fffbea, #fff3c4);
-    border: 2px solid #f9a825;
-    border-radius: 16px; padding: 18px 20px;
-    margin-top: 8px;
-    display: flex; gap: 14px; align-items: flex-start;
-  }
-  .golden-tip .gi { font-size: 28px; line-height: 1; }
-  .golden-tip h4 {
-    font-family: 'Tajawal', sans-serif;
-    font-size: 14px; font-weight: 800;
-    color: #7a5200; margin-bottom: 5px;
-  }
-  .golden-tip p { font-size: 13px; color: #6b4800; line-height: 1.75; }
+/* SECTION CARD */
+.sec-card {
+  border: 1.5px solid #e8edf2;
+  border-radius: 16px; overflow: hidden;
+  margin-bottom: 16px;
+  transition: box-shadow 0.2s;
+}
 
-  /* FOOTER */
-  .footer {
-    background: #0d2137;
-    padding: 20px 24px;
-    display: flex; flex-direction: column; gap: 14px;
-  }
-  .footer-top {
-    display: flex; align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; gap: 8px;
-  }
-  .footer-top span { color: rgba(255,255,255,0.45); font-size: 12px; }
-  .footer-hashtag {
-    background: rgba(0,184,148,0.2);
-    border: 1px solid rgba(0,184,148,0.3);
-    color: #00b894; font-size: 12px; font-weight: 700;
-    padding: 4px 14px; border-radius: 20px;
-  }
+.sec-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.10); }
 
-  .credit-card {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 16px; padding: 16px 18px;
-    display: flex; align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; gap: 14px;
-  }
+.sec-head {
+  display: flex; align-items: center; gap: 12px;
+  padding: 13px 18px;
+}
 
-  .avatar-wrap { display: flex; align-items: center; gap: 12px; }
-  .avatar {
-    width: 44px; height: 44px; border-radius: 50%;
-    background: linear-gradient(135deg, #00b894, #0ea5e9);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 19px; font-weight: 900; color: #fff;
-    font-family: 'Tajawal', sans-serif; flex-shrink: 0;
-  }
-  .avatar-info .name { color: #fff; font-size: 14px; font-weight: 700; }
-  .avatar-info .phone { color: rgba(255,255,255,0.45); font-size: 12px; direction: ltr; display: block; }
+.sec-icon {
+  width: 40px; height: 40px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 19px; flex-shrink: 0;
+}
 
-  .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
-  .dua { color: rgba(255,255,255,0.4); font-size: 12px; font-weight: 600; }
+.sec-title {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 15px; font-weight: 800;
+  color: #0d2137; flex: 1;
+}
 
-  /* CONTACT BUTTON */
-  @keyframes pulse {
-    0%,100% { box-shadow: 0 0 0 0 rgba(0,184,148,0.45); }
-    50%      { box-shadow: 0 0 0 8px rgba(0,184,148,0); }
-  }
-  .contact-btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: linear-gradient(135deg, #00b894, #0ea5e9);
-    color: #fff; font-family: 'Cairo', sans-serif;
-    font-size: 13px; font-weight: 700;
-    padding: 10px 22px; border-radius: 12px;
-    text-decoration: none;
-    transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
-    box-shadow: 0 3px 12px rgba(0,184,148,0.35);
-    animation: pulse 2s infinite;
-    white-space: nowrap;
-  }
-  .contact-btn:hover {
-    background: linear-gradient(135deg, #00d4a8, #0fb8f0);
-    transform: scale(1.05);
-    box-shadow: 0 6px 22px rgba(0,184,148,0.55);
-  }
-  .contact-btn .btn-icon { font-size: 16px; }
+.sec-num {
+  width: 26px; height: 26px; border-radius: 50%;
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 800; flex-shrink: 0;
+}
+
+.sec-body { padding: 4px 18px 14px; background: #fff; }
+
+.tip-row {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px dashed #eef1f4;
+  font-size: 13.5px; color: #2d3a45; line-height: 1.65;
+}
+
+.tip-row:last-of-type { border-bottom: none; }
+
+.tip-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  margin-top: 6px; flex-shrink: 0;
+}
+
+.example-box {
+  background: #e8faf6;
+  border-right: 3px solid #00b894;
+  border-radius: 0 10px 10px 0;
+  padding: 10px 14px;
+  margin-top: 10px; font-size: 13px; color: #1a3a52;
+}
+
+.example-box strong {
+  display: block; color: #00896e;
+  font-size: 11px; letter-spacing: 0.5px; margin-bottom: 4px;
+}
+
+/* EXAMPLES TABS */
+.examples-label {
+  font-size: 11px; font-weight: 700; color: #00896e;
+  letter-spacing: 0.5px; margin-bottom: 6px; margin-top: 10px;
+  display: block;
+}
+
+.example-tabs {
+  display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px;
+}
+
+.ex-tab {
+  background: rgba(0,184,148,0.1);
+  border: 1px solid rgba(0,184,148,0.25);
+  color: #00896e;
+  font-size: 11px; font-weight: 700;
+  padding: 3px 10px; border-radius: 20px;
+  cursor: pointer; transition: all 0.18s;
+  font-family: 'Cairo', sans-serif;
+}
+
+.ex-tab.active, .ex-tab:hover {
+  background: #00b894; color: #fff;
+  border-color: #00b894;
+}
+
+.ex-content { display: none; }
+.ex-content.active { display: block; }
+
+.example-multi {
+  background: #e8faf6;
+  border-right: 3px solid #00b894;
+  border-radius: 0 10px 10px 0;
+  padding: 10px 14px;
+  font-size: 13px; color: #1a3a52;
+}
+
+/* GOLDEN TIP */
+.golden-tip {
+  background: linear-gradient(135deg, #fffbea, #fff3c4);
+  border: 2px solid #f9a825;
+  border-radius: 16px; padding: 18px 20px;
+  margin-top: 8px;
+  display: flex; gap: 14px; align-items: flex-start;
+}
+
+.golden-tip .gi { font-size: 28px; line-height: 1; }
+
+.golden-tip h4 {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 14px; font-weight: 800;
+  color: #7a5200; margin-bottom: 5px;
+}
+
+.golden-tip p { font-size: 13px; color: #6b4800; line-height: 1.75; }
+
+/* FOOTER */
+.footer {
+  background: #0d2137;
+  padding: 20px 24px;
+  display: flex; flex-direction: column; gap: 14px;
+}
+
+.footer-top {
+  display: flex; align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; gap: 8px;
+}
+
+.footer-top span { color: rgba(255,255,255,0.45); font-size: 12px; }
+
+.footer-hashtag {
+  background: rgba(0,184,148,0.2);
+  border: 1px solid rgba(0,184,148,0.3);
+  color: #00b894; font-size: 12px; font-weight: 700;
+  padding: 4px 14px; border-radius: 20px;
+}
+
+.credit-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px; padding: 16px 18px;
+  display: flex; align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; gap: 14px;
+}
+
+.avatar-wrap { display: flex; align-items: center; gap: 12px; }
+
+.avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: linear-gradient(135deg, #00b894, #0ea5e9);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 19px; font-weight: 900; color: #fff;
+  font-family: 'Tajawal', sans-serif; flex-shrink: 0;
+}
+
+.avatar-info .name { color: #fff; font-size: 14px; font-weight: 700; }
+.avatar-info .phone { color: rgba(255,255,255,0.45); font-size: 12px; direction: ltr; display: block; }
+
+.footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.dua { color: rgba(255,255,255,0.4); font-size: 12px; font-weight: 600; }
+
+/* CONTACT BUTTON */
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(0,184,148,0.45); }
+  50% { box-shadow: 0 0 0 8px rgba(0,184,148,0); }
+}
+
+.contact-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: linear-gradient(135deg, #00b894, #0ea5e9);
+  color: #fff; font-family: 'Cairo', sans-serif;
+  font-size: 13px; font-weight: 700;
+  padding: 10px 22px; border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
+  box-shadow: 0 3px 12px rgba(0,184,148,0.35);
+  animation: pulse 2s infinite;
+  white-space: nowrap;
+}
+
+.contact-btn:hover {
+  background: linear-gradient(135deg, #00d4a8, #0fb8f0);
+  transform: scale(1.05);
+  box-shadow: 0 6px 22px rgba(0,184,148,0.55);
+}
+
+.contact-btn .btn-icon { font-size: 16px; }
 </style>
 </head>
 <body>
@@ -230,12 +290,12 @@
     <div class="blob1"></div>
     <div class="blob2"></div>
     <div class="header-inner">
-      <div class="badge">🎓 خريجي تجارة</div>
-      <h1>إزاي تكتب <span>CV احترافي</span><br>حتى لو معكش خبرة؟</h1>
-      <p>مش لازم تكون شغلت قبل كده عشان يكون عندك CV قوي — كل اللي عملته في الجامعة بيحسب!</p>
+      <div class="badge">🎓 لكل طالب وخريج</div>
+      <h1>إزاي تكتب <span>CV احترافي</span><br>مهما كان تخصصك؟</h1>
+      <p>سواء كنت طالب، خريج جديد، أو عندك شوية خبرة — الدليل ده هيساعدك تبني CV قوي من اللي عندك فعلاً!</p>
       <div class="header-tags">
         <span>📄 7 أقسام أساسية</span>
-        <span>💼 أمثلة لتجارة</span>
+        <span>💼 أمثلة لكل تخصص</span>
         <span>✅ جاهز للتطبيق</span>
       </div>
     </div>
@@ -253,7 +313,21 @@
       </div>
       <div class="sec-body">
         <div class="tip-row"><div class="tip-dot" style="background:#00b894"></div>جملتين أو 3 عن نفسك: تخصصك، أقوى مهاراتك، وهدفك المهني.</div>
-        <div class="example-box"><strong>✍️ مثال:</strong>خريج محاسبة من جامعة القاهرة، لدي شغف بالتحليل المالي وإتقان برامج Excel وQuickBooks، أسعى للانضمام لفريق مالي يُتيح لي تطبيق معرفتي الأكاديمية وتطويرها.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#00b894"></div>خليه محدد وموجه — مش كلام عام ينفع لأي حد.</div>
+
+        <span class="examples-label">✍️ أمثلة حسب تخصصك:</span>
+        <div class="example-tabs">
+          <button class="ex-tab active" onclick="switchTab(this, 'sum')">تجارة</button>
+          <button class="ex-tab" onclick="switchTab(this, 'sum')">هندسة</button>
+          <button class="ex-tab" onclick="switchTab(this, 'sum')">حاسبات</button>
+          <button class="ex-tab" onclick="switchTab(this, 'sum')">طب وصيدلة</button>
+          <button class="ex-tab" onclick="switchTab(this, 'sum')">إعلام وفنون</button>
+        </div>
+        <div class="ex-content active example-multi">خريج محاسبة، لدي شغف بالتحليل المالي وإتقان Excel وQuickBooks، أسعى للانضمام لفريق مالي يُتيح لي تطبيق معرفتي وتطويرها.</div>
+        <div class="ex-content example-multi">مهندس مدني حديث التخرج، أتقن AutoCAD وRevit، وأسعى للمشاركة في مشاريع بنية تحتية تُنمّي مهاراتي التصميمية.</div>
+        <div class="ex-content example-multi">خريج علوم حاسب، أجيد Python وWeb Development، أبحث عن فرصة في مجال تطوير البرمجيات لتحويل أفكاري لمنتجات حقيقية.</div>
+        <div class="ex-content example-multi">طالب طب في السنة الأخيرة، أسعى لتدريب سريري في مجال الجراحة مع اهتمام خاص بأبحاث الطب الوقائي.</div>
+        <div class="ex-content example-multi">خريجة إعلام متخصصة في المحتوى الرقمي وإدارة السوشيال ميديا، لديّ خبرة في إنتاج محتوى حصد آلاف التفاعلات.</div>
       </div>
     </div>
 
@@ -265,9 +339,9 @@
         <div class="sec-num" style="background:#4a7cfc">2</div>
       </div>
       <div class="sec-body">
-        <div class="tip-row"><div class="tip-dot" style="background:#4a7cfc"></div>اذكر الجامعة والتخصص (محاسبة / إدارة أعمال / تمويل / تسويق…)</div>
-        <div class="tip-row"><div class="tip-dot" style="background:#4a7cfc"></div>سنة التخرج والمعدل التراكمي لو 3.0 أو أكتر.</div>
-        <div class="tip-row"><div class="tip-dot" style="background:#4a7cfc"></div>ذكر مواد مهمة ليها علاقة بالوظيفة (مثال: محاسبة تكاليف، تمويل دولي، تسويق رقمي).</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#4a7cfc"></div>اذكر الجامعة، الكلية، والتخصص بوضوح.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#4a7cfc"></div>سنة التخرج (أو المتوقعة) والمعدل التراكمي لو 3.0 أو أكتر.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#4a7cfc"></div>اذكر مواد أو مسارات مهمة ليها علاقة بالوظيفة اللي بتقدم عليها.</div>
       </div>
     </div>
 
@@ -275,13 +349,24 @@
     <div class="sec-card">
       <div class="sec-head" style="background:#fff8ee">
         <div class="sec-icon" style="background:#ffe8b5">📊</div>
-        <div class="sec-title">المشاريع الأكاديمية</div>
+        <div class="sec-title">المشاريع الأكاديمية والشخصية</div>
         <div class="sec-num" style="background:#f9a825">3</div>
       </div>
       <div class="sec-body">
-        <div class="tip-row"><div class="tip-dot" style="background:#f9a825"></div>مشروع التخرج؟ اذكر الموضوع والنتيجة اللي وصلت ليها.</div>
-        <div class="tip-row"><div class="tip-dot" style="background:#f9a825"></div>أي دراسة حالة أو تحليل مالي أو خطة تسويقية عملتها.</div>
-        <div class="example-box"><strong>✍️ مثال:</strong>تحليل مالي لشركة مدرجة في البورصة المصرية — درست نسب السيولة والربحية لمدة 3 سنوات وقدمت توصيات استثمارية.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#f9a825"></div>مشروع التخرج؟ اذكر الموضوع، دورك فيه، والنتيجة.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#f9a825"></div>أي مشروع شخصي أو freelance أو مبادرة عملتها بنفسك.</div>
+
+        <span class="examples-label">✍️ أمثلة حسب تخصصك:</span>
+        <div class="example-tabs">
+          <button class="ex-tab active" onclick="switchTab(this, 'proj')">تجارة</button>
+          <button class="ex-tab" onclick="switchTab(this, 'proj')">هندسة</button>
+          <button class="ex-tab" onclick="switchTab(this, 'proj')">حاسبات</button>
+          <button class="ex-tab" onclick="switchTab(this, 'proj')">إعلام وفنون</button>
+        </div>
+        <div class="ex-content active example-multi">تحليل مالي لشركة مدرجة في البورصة المصرية — درست نسب السيولة والربحية لمدة 3 سنوات وقدمت توصيات استثمارية.</div>
+        <div class="ex-content example-multi">تصميم جسر خرساني كمشروع تخرج باستخدام SAP2000 — تحمّل أحمالاً تفوق المتطلبات المعيارية بنسبة 15%.</div>
+        <div class="ex-content example-multi">تطوير تطبيق ويب لإدارة المهام باستخدام React وNode.js — نشرته على GitHub وحصل على 200+ نجمة.</div>
+        <div class="ex-content example-multi">إنتاج حملة محتوى لعلامة تجارية ناشئة على إنستجرام — أسفرت عن زيادة 40% في المتابعين خلال شهر.</div>
       </div>
     </div>
 
@@ -289,13 +374,14 @@
     <div class="sec-card">
       <div class="sec-head" style="background:#fdf0f0">
         <div class="sec-icon" style="background:#fcd5d5">🏢</div>
-        <div class="sec-title">التدريب (حتى لو قصير)</div>
+        <div class="sec-title">الخبرة العملية والتدريب</div>
         <div class="sec-num" style="background:#e05c5c">4</div>
       </div>
       <div class="sec-body">
-        <div class="tip-row"><div class="tip-dot" style="background:#e05c5c"></div>أي تدريب صيفي أو في بنك أو شركة — حتى لو أسبوعين.</div>
-        <div class="tip-row"><div class="tip-dot" style="background:#e05c5c"></div>اكتب إيه اللي عملته مش بس اسم المكان.</div>
-        <div class="example-box"><strong>✍️ مثال:</strong>متدرب في قسم المحاسبة — ساعدت في إعداد القيود اليومية وتسوية كشوف البنك باستخدام Excel.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#e05c5c"></div>أي تدريب صيفي أو part-time أو freelance — حتى لو قصير.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#e05c5c"></div>اكتب إيه اللي عملته فعلاً، مش بس اسم المكان.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#e05c5c"></div>لو معكش خبرة رسمية، المشاريع الشخصية بتملأ الفراغ ده.</div>
+        <div class="example-box"><strong>✍️ مثال:</strong>متدرب في قسم IT — ساعدت في صيانة الشبكة الداخلية وحل مشكلات المستخدمين، خفّضت وقت الاستجابة بنسبة 20%.</div>
       </div>
     </div>
 
@@ -307,9 +393,9 @@
         <div class="sec-num" style="background:#8b5cf6">5</div>
       </div>
       <div class="sec-body">
-        <div class="tip-row"><div class="tip-dot" style="background:#8b5cf6"></div><strong>تقنية:</strong>&nbsp;Excel (Pivot Tables, VLOOKUP)، Word، PowerPoint، QuickBooks، SAP Basics</div>
-        <div class="tip-row"><div class="tip-dot" style="background:#8b5cf6"></div><strong>لغات:</strong>&nbsp;عربي (لغة أم)، إنجليزي (مستواك: A2 / B1 / B2 / C1)</div>
-        <div class="tip-row"><div class="tip-dot" style="background:#8b5cf6"></div><strong>شخصية:</strong>&nbsp;تواصل فعّال، عمل تحت ضغط، اهتمام بالتفاصيل</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#8b5cf6"></div><strong>تقنية:</strong>&nbsp;البرامج والأدوات الخاصة بتخصصك + Microsoft Office + أي أدوات AI.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#8b5cf6"></div><strong>لغات:</strong>&nbsp;عربي (لغة أم)، إنجليزي (مستواك: A2 / B1 / B2 / C1) — كن صريح.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#8b5cf6"></div><strong>شخصية:</strong>&nbsp;تواصل فعّال، حل مشكلات، عمل في فريق، إدارة وقت.</div>
       </div>
     </div>
 
@@ -321,10 +407,10 @@
         <div class="sec-num" style="background:#0ea5e9">6</div>
       </div>
       <div class="sec-body">
-        <div class="tip-row"><div class="tip-dot" style="background:#0ea5e9"></div>كورسات أون لاين: Coursera، LinkedIn Learning، إديراك</div>
-        <div class="tip-row"><div class="tip-dot" style="background:#0ea5e9"></div>نادي جامعي كنت عضو أو في قيادته.</div>
-        <div class="tip-row"><div class="tip-dot" style="background:#0ea5e9"></div>جوائز أو مسابقات أكاديمية شاركت فيها.</div>
-        <div class="example-box"><strong>✍️ مثال:</strong>كورس "Financial Analysis &amp; Valuation" — Coursera (جامعة Michigan) | نائب رئيس نادي ريادة الأعمال الجامعي</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#0ea5e9"></div>كورسات أون لاين: Coursera، LinkedIn Learning، Udemy، إديراك.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#0ea5e9"></div>نادي جامعي، فريق رياضي، مسابقة، أو مؤتمر حضرته.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#0ea5e9"></div>جوائز أو شهادات تقدير من أي جهة.</div>
+        <div class="example-box"><strong>✍️ مثال:</strong>كورس "Machine Learning" — Coursera (Stanford) | عضو مؤسس في نادي ريادة الأعمال الجامعي | المركز الأول في هاكاثون جامعة القاهرة 2024.</div>
       </div>
     </div>
 
@@ -336,9 +422,9 @@
         <div class="sec-num" style="background:#16a34a">7</div>
       </div>
       <div class="sec-body">
-        <div class="tip-row"><div class="tip-dot" style="background:#16a34a"></div>بيدي انطباع ممتاز عن شخصيتك ومبادرتك.</div>
-        <div class="tip-row"><div class="tip-dot" style="background:#16a34a"></div>اذكر المنظمة ودورك فيها وأثره.</div>
-        <div class="example-box"><strong>✍️ مثال:</strong>متطوع في منظمة محو الأمية المالية — قدمت 4 ورش لطلاب ثانوي عن أساسيات الادخار والميزانية الشخصية.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#16a34a"></div>بيدي انطباع ممتاز عن شخصيتك ومبادرتك بصرف النظر عن تخصصك.</div>
+        <div class="tip-row"><div class="tip-dot" style="background:#16a34a"></div>اذكر المنظمة أو المبادرة، دورك فيها، وأثرها.</div>
+        <div class="example-box"><strong>✍️ مثال:</strong>متطوع في مبادرة "كود للجميع" — علّمت أساسيات البرمجة لـ 30 طالب ثانوي في 8 ورش خلال صيف 2024.</div>
       </div>
     </div>
 
@@ -357,9 +443,8 @@
   <div class="footer">
     <div class="footer-top">
       <span>شاركه مع أصحابك 🎓</span>
-      <span class="footer-hashtag">#خريجي_تجارة</span>
+      <span class="footer-hashtag">#دليل_الـCV</span>
     </div>
-
     <div class="credit-card">
       <div class="avatar-wrap">
         <div class="avatar">K</div>
@@ -379,5 +464,21 @@
   </div>
 
 </div>
+
+<script>
+function switchTab(btn, group) {
+  const card = btn.closest('.sec-body');
+  const tabs = btn.closest('.example-tabs').querySelectorAll('.ex-tab');
+  const contents = card.querySelectorAll('.ex-content');
+  const idx = Array.from(tabs).indexOf(btn);
+
+  tabs.forEach(t => t.classList.remove('active'));
+  contents.forEach(c => c.classList.remove('active'));
+
+  btn.classList.add('active');
+  if (contents[idx]) contents[idx].classList.add('active');
+}
+</script>
+
 </body>
 </html>
